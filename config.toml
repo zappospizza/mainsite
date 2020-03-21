@@ -1,0 +1,140 @@
+######################## default configuration ####################
+baseURL = "/"
+languageCode = "en-us"
+title = "Zappos Pizza"
+theme="restaurant-hugo"
+summaryLength = "7"
+paginate = 4
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "css/slick.css"
+  [[params.plugins.css]]
+  URL = "css/font-awesome.min.css"
+  [[params.plugins.css]]
+  URL = "css/animate.min.css"
+  [[params.plugins.css]]
+  URL = "css/venobox.css"
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/responsive.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "js/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "js/slick.min.js"
+  [[params.plugins.js]]
+  URL = "js/wow.min.js"
+  [[params.plugins.js]]
+  URL = "js/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "js/main.js"
+
+############################## navigation ###############################
+[menu]
+	
+	[[menu.main]]
+  name = "Home"
+  URL = "hero-area"
+  weight = 1
+
+  [[menu.main]]
+  name = "About Us"
+  URL = "about-us"
+  weight = 2
+
+  [[menu.main]]
+  name = "Menu"
+  URL = "zappos-menu"
+  weight = 3
+
+  [[menu.main]]
+  name = "Specials"
+  URL = "specials"
+  weight = 4
+
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 5
+
+  # [[menu.main]]
+  # name = "News"
+  # URL = "subscribe"
+  # weight = 5
+
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+copyright = "Copyright 2020 - All Rights Reserved. Zappos Pizza a Registered Trademark."
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif format
+
+################################### Footer ############################
+[params.footer]
+enable = true
+contactInfoTitle = "CONTACT <span>INFO</span> "
+blogTitle = "LATEST <span>BLOG POSTS</span>"
+galleryTitle = "PHOTO <span>STREAM</span>"
+socialTitle = "Follow <span>US</span>"
+
+############################ footer contact item
+[[params.footer.contactItem]]
+title="Telephone"
+icon = "fa fa-phone"
+content = "(503) 246-8400"
+
+[[params.footer.contactItem]]
+title="Address"
+icon = "fa fa-map-marker"
+content = "6114 SE King Rd. Portland, Oregon 97222"
+
+[[params.footer.contactItem]]
+title="Email"
+icon = "fa fa-envelope"
+content = "orders@zappospizza.com"
+
+######################### footer gallery
+[[params.footer.gallery]]
+image = "images/slider/slider-img-1.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/slider-img-2.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/slider-img-3.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/slider-img-4.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/slider-img-1.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/slider-img-2.jpg"
+
+######################## Social Icon 
+[[params.footer.socialLink]]
+icon = "facebook"
+link = "https://fb.com/zappospizzapdx"
+
+[[params.footer.socialLink]]
+icon = "twitter"
+link = "https://twitter.com/zappospizza"
+
+[[params.footer.socialLink]]
+icon = "instagram"
+link = "https://twitter.com/zappospizza"

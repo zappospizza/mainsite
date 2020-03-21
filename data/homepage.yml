@@ -1,0 +1,87 @@
+################## Hero area ##################
+heroArea:
+  enable : true
+  bgImage : "images/header.jpeg"
+  overlay:
+    enable : true
+
+################### Gallery ###################
+gallery:
+  enable : false
+  sliderItem:
+    - image : "images/slider/cookie.jpg"
+    - image : "images/slider/greek-salad.jpg"
+    - image : "images/slider/slider-img-1.jpg"
+    - image : "images/slider/slider-img-2.jpg"
+    - image : "images/slider/slider-img-3.jpg"
+    - image : "images/slider/slider-img-4.jpg"
+
+################ About #######################
+about:
+  enable : true
+  image : "images/logo-rnd.png"
+  title : "Zappos Pizza - Delivering Delicious Pizza Since 2004!"
+  description : "Since Zappos was founded in 2004 we've strived to offer our community the best service and the best pizza"
+  
+################# Blog ######################
+blog:
+  enable : true
+  title : "<span>Featured</span> Menu Items"
+  bgImage : "images/blog/zappos-tasty.jpeg"
+  overlay:
+    enable : true
+
+
+################# food Menu ################
+pricing:
+  enable : true
+  title : "Our Weekly Specials!"
+  #description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+  #subtitle : "FEATURED ON THE WEEK"
+  pricingItem:
+  - title: "Monday"
+    description: "Medium 1-2 Topping Pizza"
+    price : "$13.00"
+
+  - title: "Tuesday"
+    description: "Pasta Night! Large Pasta + Bottle of Wine"
+    price : "$20.00"
+
+  - title: "Wednesday"
+    description: "Wing Wednesday! 12PC Wings + Regular Potato Wedges"
+    price : "$13.00"
+
+  - title: "Thursday"
+    description: "Large Specialty Pizza + Cheesy Bread + 2 Liters Soda"
+    price : "$25.00"
+
+  - title: "Friday"
+    description: "2 Large 1-2 Topping Pizza + 6PK Beer OR 2 2-Liter Sodas"
+    price : "$35.00"
+
+  - title: "Saturday"
+    description: "2 XL 1-2 Topping Pizza"
+    price : "$30.00"
+
+  - title: "Sunday"
+    description: "Large 1 Topping Pizza + 6PC Wings"
+    price : "$20.00"
+
+
+################### Subscription ################
+subscription:
+  enable : true
+  bgImage : "images/pesto.jpeg"
+  title : "Signup for our Zappos Email Club!"
+  description : "Get coupons and updates delivered directly to your inbox. Simply enter your email below and hit subscribe!"
+  formAction : ""
+  formName : ""
+  overlay:
+    enable : true
+
+################ Contact #######################
+contact:
+  enable : false
+  title: "<span> Contact Us </span>"
+  subtitle: "SIGN UP FOR EMAIL ALERTS"
+  formAction : "#" #contact form works with formspree.io
