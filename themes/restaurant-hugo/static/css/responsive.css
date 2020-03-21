@@ -378,4 +378,18 @@ px      68    160    252    */
     padding-left: 2em;
     padding-right: 2em;
   }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group .form-control {
+    width: 65% !important;
+    font-size: 14px !important;
+  }
+
+  #email-club-submit {
+    font-size: 14px !important;
+    width: 35%;
+  }
 }

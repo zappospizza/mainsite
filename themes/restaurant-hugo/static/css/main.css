@@ -582,15 +582,18 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 --*/
 .subscription-form #mc_embed_signup {
   background: none;
-  width: 70%;
-  margin: 0 auto;
 }
 
-#mc_embed_signup .mc-field-group label {
+.mc-field-group label {
   color: #fff;
 }
 
-#mc_embed_signup .mc-field-group input.email {
+.form-group {
+  width: 70%;
+  margin: 4em auto;
+}
+
+.form-group .form-control {
   background: #fff;
   opacity: 0.9;
   border: none;
@@ -602,7 +605,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   outline: none;
 }
 
-#mc_embed_signup .mc-field-group input.button {
+#email-club-submit {
   height: 65px;
   float: left;
   display: inline-block;
@@ -647,13 +650,13 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 #subscribe .block form .form-control {
-  width: 450px;
+  width: 75%;
   background: #fff;
   opacity: 0.9;
   border: none;
   height: 65px;
   border-radius: 0px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #subscribe .block form .input-group-addon {

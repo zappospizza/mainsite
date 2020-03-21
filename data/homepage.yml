@@ -21,8 +21,8 @@ about:
   enable : true
   image : "images/logo-rnd.png"
   title : "Zappos Pizza - Delivering Delicious Pizza Since 2004!"
-  description : "Since Zappos was founded in 2004 we've strived to offer our community the best service and the best pizza"
-  
+  description : "Since Zappos was founded in 2004 we've strived to offer our community the best service and the best pizza."
+
 ################# Blog ######################
 blog:
   enable : true
