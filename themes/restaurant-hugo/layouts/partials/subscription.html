@@ -10,8 +10,11 @@
                             <h1 class=" heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">{{ .title | markdownify }}</h1>
                             <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">{{ .description | markdownify }}</p>
                         </div>
+                        <p class="hidden">
+                            <label>Favorite Pizza<input name="name-me"/></label>
+                        </p>
                         <div class="form-group">
-                            <input name="email" type="email" class="form-control" placeholder="Email Address">
+                            <input name="email" type="email" class="form-control" placeholder="Email Address" required>
                             <button class="btn btn-main" name="submit" type="submit" id="email-club-submit">Subscribe</button>
                         </div>
                     </form>
