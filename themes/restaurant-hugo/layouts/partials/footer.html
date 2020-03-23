@@ -77,6 +77,7 @@
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range .Site.Params.plugins.js}}
 <script src="{{ .URL | absURL }}"></script>
+{{ end }}
 {{ "<!-- google analitycs -->" | safeHTML }}
 {{ with .Site.Params.google_analitycs_id }}
 <script>
