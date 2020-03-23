@@ -76,7 +76,7 @@ paginate = 4
 #################### default parameters ################################
 [params]
 logo = "images/logo.png"
-copyright = "Copyright 2020 - All Rights Reserved. Zappos Pizza a Registered Trademark."
+copyright = "Copyright 2020 - All Rights Reserved. Zappos Pizza a Registered Trademark of Zappos Pizza PDX LLC."
 google_analitycs_id = "UA-161532326-1"
 
 # Preloader
@@ -87,10 +87,10 @@ preloader = "" # use .png , .svg or .gif format
 ################################### Footer ############################
 [params.footer]
 enable = true
-contactInfoTitle = "CONTACT <span>INFO</span> "
-blogTitle = "LATEST <span>BLOG POSTS</span>"
-galleryTitle = "PHOTO <span>STREAM</span>"
-socialTitle = "Follow <span>US</span>"
+contactInfoTitle = "Contact <span>Zappos</span>"
+blogTitle = "Latest <span>Zappos</span> Updates"
+# galleryTitle = "PHOTO <span>STREAM</span>"
+socialTitle = "Follow <span>Zappos</span>"
 
 ############################ footer contact item
 [[params.footer.contactItem]]
@@ -138,4 +138,4 @@ link = "https://twitter.com/zappospizza"
 
 [[params.footer.socialLink]]
 icon = "instagram"
-link = "https://twitter.com/zappospizza"
+link = "https://www.instagram.com/zappospizza"

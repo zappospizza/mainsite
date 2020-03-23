@@ -760,18 +760,19 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   height: auto;
 }
 
-#footer .block h3 {
+#footer .block h2 {
   color: #2E2E2E;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
-#footer .block h3 span {
+#footer .block h2 span {
   color: #EC1C24;
 }
 
 #footer .block .blog ul,
 #footer .block .info ul,
-#footer .block .gallary ul {
+#footer .block .gallary ul,
+#footer .block ..social-media-link {
   padding-top: 20px;
 }
 
@@ -975,4 +976,10 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   background-color: rgba(0,0,0,.5); 
   width: 70%; 
   margin: 0 auto;
+}
+
+#subscribe,
+#blog {
+  background-position: center;
+  background-repeat: no-repeat;
 }

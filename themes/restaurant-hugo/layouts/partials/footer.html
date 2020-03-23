@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="block wow fadeInLeft" data-wow-delay="200ms">
-                    <h3>{{ with .Site.Params.footer.contactInfoTitle }} {{ . | safeHTML }} {{ end }}</h3>
+                    <h2>{{ with .Site.Params.footer.contactInfoTitle }} {{ . | safeHTML }} {{ end }}</h2>
                     <div class="info">
                         <ul>
                             {{ range $.Site.Params.footer.contactItem }}
@@ -20,7 +20,7 @@
             <!-- .col-md-4 close -->
             <div class="col-md-4">
                 <div class="block wow fadeInLeft" data-wow-delay="700ms">
-                    <h3>{{ with .Site.Params.footer.blogTitle }} {{ . | safeHTML }} {{ end }}</h3>
+                    <h2>{{ with .Site.Params.footer.blogTitle }} {{ . | safeHTML }} {{ end }}</h2>
                     <div class="blog">
                         <ul>
                             {{ range first 3 (where .Site.Pages "Type" "post") }}
@@ -37,16 +37,16 @@
             <!-- .col-md-4 close -->
             <div class="col-md-4">
                 <div class="block wow fadeInLeft" data-wow-delay="1100ms">
-                    <div class="gallary">
+                    <!-- <div class="gallary">
                         <h3>{{ with .Site.Params.footer.galleryTitle }} {{ . | safeHTML }} {{ end }}</h3>
                         <ul class="gallery">
                             {{ range $.Site.Params.footer.gallery }}
                             <li><a href="{{ .image | absURL }}" class="venobox" data-gall="footerGallery"><img class="img-responsive" src="{{ .image | absURL }}" alt=""></a></li>
                             {{ end }}
                         </ul>
-                    </div>
+                    </div> -->
+                    <h2>{{ with .Site.Params.footer.socialTitle }} {{ . | safeHTML }} {{ end }}</h2>
                     <div class="social-media-link">
-                        <h3>{{ with .Site.Params.footer.socialTitle }} {{ . | safeHTML }} {{ end }}</h3>
                         <ul>
                             {{ range $.Site.Params.footer.socialLink }}
                             <li><a href="{{ .link | safeURL }}"><i class="fa fa-{{ .icon }}"></i></a></li>
