@@ -220,7 +220,26 @@ nav .block .navbar-default .navbar-nav>li>a {
   color: #2E2E2E;
   padding: 10px 0px;
   margin: 0px 15px;
-  font-size: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav .block .navbar-default .navbar-nav>li>button {
+  border-radius: 0px;
+  background-color: #EC1C24;
+  margin-left: 18px;
+  border: none;
+}
+
+nav .block .navbar-default .navbar-nav>li>button:hover {
+  background-color: #f1595f;
+}
+
+nav .block .navbar-default .navbar-nav>li>button>a {
+  color: #FFFFFF;
+  padding: 10px 0px;
+  margin: 0px 15px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -623,6 +642,10 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   -webkit-transition: .3s all;
   -o-transition: .3s all;
   transition: .3s all;
+}
+
+#email-club-submit:hover {
+  background-color: #f1595f;
 }
 
 .subscription-form #mc_embed_signup #mce-success-response {
