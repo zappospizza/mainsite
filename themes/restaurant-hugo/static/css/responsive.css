@@ -197,6 +197,12 @@ px      68    160    252    */
   .btn-sm-block {
     display: block;
     width: 100%;
+    margin-left: 15px !important;
+    text-align: center;
+  }
+
+  nav .block .navbar-default .navbar-nav>li {
+    margin-right: 25px !important;
   }
   /*--
     slider Start
