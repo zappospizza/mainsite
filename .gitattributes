@@ -1,0 +1,5 @@
+*.md text eol=crlf
+*.html text eol=crlf
+*.css text eol=crlf
+*.yml text eol=crlf
+*.toml text eol=crlf
