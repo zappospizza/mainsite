@@ -52,24 +52,24 @@ paginate = 4
   URL = "about-us"
   weight = 2
 
+  [[menu.main]]
+  name = "Locations"
+  URL = "locations"
+  weight = 3
+
   # [[menu.main]]
-  # name = "Locations"
-  # URL = "locations"
-  # weight = 3
-
-  [[menu.main]]
-  name = "Menu"
-  URL = "zappos-menu"
-  weight = 4
-
-  [[menu.main]]
-  name = "Specials"
-  URL = "specials"
-  weight = 5
+  # name = "Menu"
+  # URL = "zappos-menu"
+  # weight = 4
 
   [[menu.main]]
   name = "Blog"
   URL = "blog"
+  weight = 5
+
+  [[menu.main]]
+  name = "Specials"
+  URL = "specials"
   weight = 6
 
   # [[menu.main]]
@@ -98,18 +98,23 @@ blogTitle = "Latest <span>Zappos</span> Updates"
 socialTitle = "Follow <span>Zappos</span>"
 
 ############################ footer contact item
-[[params.footer.contactItem]]
-title="Telephone"
-icon = "fa fa-phone"
-content = "(503) 246-8400"
+# [[params.footer.contactItem]]
+# title="Telephone"
+# icon = "fa fa-phone"
+# content = "(503) 246-8400"
+
+# [[params.footer.contactItem]]
+# title="Address"
+# icon = "fa fa-map-marker"
+# content = "6114 SE King Rd. Portland, Oregon 97222"
 
 [[params.footer.contactItem]]
-title="Address"
-icon = "fa fa-map-marker"
-content = "6114 SE King Rd. Portland, Oregon 97222"
+title="Info"
+icon = "fa fa-envelope"
+content = "info@zappospizza.com"
 
 [[params.footer.contactItem]]
-title="Email"
+title="Orders"
 icon = "fa fa-envelope"
 content = "orders@zappospizza.com"
 

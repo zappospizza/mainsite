@@ -235,6 +235,11 @@ nav .block .navbar-default .navbar-nav>li>button:hover {
   background-color: #f1595f;
 }
 
+#start-now:hover {
+  background-color: #f1595f !important;
+}
+
+
 nav .block .navbar-default .navbar-nav>li>button>a {
   color: #FFFFFF;
   padding: 10px 0px;
@@ -637,7 +642,6 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   color: #fff;
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-transition: .3s all;
   -o-transition: .3s all;

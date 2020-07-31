@@ -32,7 +32,7 @@ blog:
     enable : true
 
 
-################# food Menu ################
+################# Specials ################
 pricing:
   enable : true
   title : "Our Weekly Specials!"
@@ -67,6 +67,21 @@ pricing:
     description: "Large 1 Topping Pizza + 6PC Wings"
     price : "$20.00"
 
+################# Stores ################
+locations:
+  enable : true
+  #description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+  #subtitle : "FEATURED ON THE WEEK"
+  stores:
+  - storeName: King Rd. 
+    storeAddress: "6114 SE King Rd. Portland, Oregon 97233"
+    storeCode: zp001
+    storePhoneNumber: (503) 246-8400
+
+  - storeName: Stark Street 
+    storeAddress: "14919 SE Stark St. Portland, Oregon 97233"
+    storeCode: zp002
+    storePhoneNumber: (503) 206-7010
 
 ################### Subscription ################
 subscription:

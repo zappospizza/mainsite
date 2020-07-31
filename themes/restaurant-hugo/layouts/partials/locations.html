@@ -1,0 +1,63 @@
+{{ if .Site.Data.homepage.locations.enable }}
+{{ with .Site.Data.homepage.locations }}
+<section id="locations">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <div class="locations-list">
+                        <div class="jumbotron" style="background-color: transparent;">
+                            <h1 class="display-4" style="text-align: center; text-transform: uppercase;">Locations</h1>
+                            <hr class="my-4">
+                        {{ range .stores }}
+                        <div class="card" style="margin-bottom: 2em;">
+                            <div class="card-header" style="padding: 2px 20px; text-transform: uppercase; background-color: #EC1C24; color: white; font-size: 3em;">
+                              {{ .storeName }}
+                            </div>
+                            <div class="card-body" style="padding: 2em; background-color: #F6F6F6 !important;">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="card">
+                                            <h2 class="card-title" style="text-align: center; font-size: 28px;">ONLINE ORDERING</h2>
+                                            <div class="card-body">
+                                                <button id="start-now" type="button" class="btn btn-sm-block" style="margin-left: 0px !important; border-radius: 0px; border: none; background-color: #EC1C24; padding-left: 0px; padding-right: 0px; width: 100%;">
+                                                    <a style="font-size: 20px; color: #FFFFFF; width: 100% !important; padding: 10px 10px; margin: 0px 0px;" href="https://zappos.tchpt.com/store/{{ .storeName }}">
+                                                        START ORDER
+                                                    </a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="card">
+                                            <h2 class="card-title" style="text-align: center; font-size: 28px;">PHONE NUMBER</h2>
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 20px; width: 100% !important; padding: 10px 10px; text-align: center;">
+                                                    {{ .storePhoneNumber }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="card">
+                                            <h2 class="card-title" style="text-align: center; font-size: 28px;">ADDRESS</h2>
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 20px; width: 100% !important; padding: 10px 10px; text-align: center;">
+                                                    {{ .storeAddress }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .col-md-12 close -->
+        </div><!-- .row close -->
+    </div><!-- .containe close -->
+</section><!-- #specials close -->
+{{end}}
+{{end}}
