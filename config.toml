@@ -52,11 +52,6 @@ paginate = 4
   URL = "about-us"
   weight = 2
 
-  [[menu.main]]
-  name = "Locations"
-  URL = "locations"
-  weight = 3
-
   # [[menu.main]]
   # name = "Menu"
   # URL = "zappos-menu"
@@ -65,12 +60,18 @@ paginate = 4
   [[menu.main]]
   name = "Blog"
   URL = "blog"
-  weight = 5
+  weight = 3
 
   [[menu.main]]
   name = "Specials"
   URL = "specials"
-  weight = 6
+  weight = 4
+
+  [[menu.main]]
+  name = "Locations"
+  URL = "locations"
+  weight = 5
+
 
   # [[menu.main]]
   # name = "News"
