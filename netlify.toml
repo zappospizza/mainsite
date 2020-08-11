@@ -11,3 +11,11 @@ HUGO_ENABLEGITINFO = "true"
   from = "/*"
   to = "/404.html"
   status = 404
+
+## This rule redirects to an external API
+[[redirects]]
+  from = "/orders"
+  to = "https://vbp0rqgcc6.execute-api.us-west-2.amazonaws.com/mailer"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
