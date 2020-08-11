@@ -7,11 +7,6 @@ HUGO_VERSION = "0.62.1"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
-
 ## This rule redirects to an external API
 [[redirects]]
   from = "/orders"
@@ -19,3 +14,8 @@ HUGO_ENABLEGITINFO = "true"
   status = 200
   force = true # COMMENT: ensure that we always redirect
   headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
