@@ -74,7 +74,7 @@ locations:
   #subtitle : "FEATURED ON THE WEEK"
   stores:
   - storeName: King Rd. 
-    storeAddress: "6114 SE King Rd. Portland, Oregon 97233"
+    storeAddress: "6114 SE King Rd. Portland, Oregon 97222"
     storeCode: zp001
     storePhoneNumber: (503) 246-8400
 

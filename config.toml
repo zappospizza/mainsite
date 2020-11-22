@@ -84,6 +84,7 @@ paginate = 4
 logo = "images/logo.png"
 copyright = "Copyright 2020 - All Rights Reserved. Zappos Pizza a Registered Trademark of Zappos Pizza PDX LLC."
 google_analitycs_id = "UA-161532326-1"
+onlineOrders = "https://zappos.tchpt.com/home"
 
 # Preloader
 [params.preloader]
