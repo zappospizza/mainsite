@@ -1,8 +1,8 @@
 [
     {
        "sku" : "GFTCARD-50",
-       "name" : "Gift Card - $50",
-       "description": "Zappos Pizza Gift Card. Redeemable at any Zappos Pizza location!",
+       "name" : "Gift Card Special ($50)",
+       "description": "Zappos Pizza Gift Card Special. For every $50 gift card purchase you will recieve a coupon for a FREE LARGE Specialty Pizza. Limited time offer. Redeemable at any Zappos Pizza location!",
        "image": "images/gift-card.jpeg",
        "image_hover": "images/gift-card.jpeg",
        "amount": "5000",
