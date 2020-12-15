@@ -15,10 +15,10 @@
                <div class="product">
                   <img
                     src="{{ .image | absURL }}"
-                     class = "img-fluid shadow rounded"
+                     class = "img-responsive shadow rounded"
                      alt = "{{ .name }}"
                      title = "{{- .description -}}"
-                     width = "400" height = "400"
+                     width = "500" height = "400"
                   >
                   <!-- Use this code if you want to use images from STATIC folder
                   <img src="{{ .image | relURL }}"
@@ -30,11 +30,11 @@
                      />
                   -->
 
-                  <h2>{{ .name }}</h2>
+                  <h3>{{ .name }}</h3>
                   <p class="description">{{ .description}}</p>
-                  <p class="price">{{ i18n "prix-shop" }} : {{ lang.NumFmt 2 (div (float .amount) 100) }} {{ .currency }}</p>
+                  <p class="price">Price: ${{ lang.NumFmt 2 (div (float .amount) 100) }} {{ .currency }}</p>
                   <form action="" method="POST" id="hugoform{{ $count }}">
-                     <label for="quantity">{{ i18n "quantity-shop" }} :</label>
+                     <label for="quantity">Qty:</label>
                      <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" />
                      <input type="hidden" name="sku" value="{{ .sku }}" />
                      <!-- For multilanguage sites -->
@@ -47,7 +47,7 @@
                      {{- $stripePath := (strings.TrimRight "/" site.BaseURL) }}
                      <input type="hidden" name="stripePath" value="{{ $stripePath }}" />
                      <br>
-                     <button type="submit" class="fa fa-shopping-cart"></button>
+                     <button type="submit">Checkout <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                   </form>
                </div>
             </div>

@@ -1012,18 +1012,18 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 .product input {
-  border: 1px solid teal;
+  border: 1px solid#EC1C24;
   border-radius: 0.25rem;
   font-size: 1.125rem;
   line-height: 1.25rem;
   padding: 0.2rem;
 }
 .product button {
-  background: teal;
+  background:#EC1C24;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0rem;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 800;
   line-height: 1.1rem;
   padding: 0.25rem;
