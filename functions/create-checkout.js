@@ -14,9 +14,6 @@ exports.handler = async (event) => {
    // Sanitize quantity
    const validateQuantity = quantity > 0 && quantity < 11 ? quantity : 1;
 
-   // Get the return URL part for the used language
-   const rootUrl = '/';
-
    // Create Stripe session
    const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -28,13 +25,13 @@ exports.handler = async (event) => {
       // The real next URL for the web site language
       // success_url: `${process.env.URL}`+rootUrl+`/thanks/`,
       // cancel_url:  `${process.env.URL}`+rootUrl+`/oops/`,
-      success_url: stripePath+rootUrl+`/thanks/`,
-      cancel_url:  stripePath+rootUrl+`/oops/`,
+      success_url: '${process.env.URL}' + '/thanks/',
+      cancel_url:  '${process.env.URL}',
 
       // Information about the product
       line_items: [
          {
-            name: `[`+product.sku+'] '+product.name ,
+            name: '[' + product.sku + '] ' + product.name ,
             description: product.description,
             amount: product.amount,
             currency: product.currency,
