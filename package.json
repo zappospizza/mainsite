@@ -1,0 +1,19 @@
+{
+  "name": "zappos-mainsite",
+  "version": "1.0.0",
+  "description": "It's pizza time!",
+  "main": "functions/stripe-purchase.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zappospizza/mainsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zappospizza/mainsite/issues"
+  },
+  "homepage": "https://github.com/zappospizza/mainsite#readme",
+  "dependencies": {
+    "stripe": "^8.128.0"
+  }
+}
