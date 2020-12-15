@@ -15,7 +15,7 @@ export async function handleFormSubmission(event) {
        sku: form.get('sku'),
        quantity: form.get('quantity'),
        formlang: form.get('formlang'),
-       stripeImgPath: form.get(`stripeImgPath`),
+       stripePath: form.get(`stripePath`),
        stripeImg: form.get(`stripeImg`),
     };
  

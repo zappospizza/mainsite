@@ -8,14 +8,14 @@ exports.handler = async (event) => {
    //   The following URLs are set according to form language
    //   Get language (formlang) transmited from the form
    //   Get Absolute path for images on the Stripe checkout page
-   const { sku, quantity, formlang, stripeImgPath, stripeImg } = JSON.parse(event.body);
+   const { sku, quantity, formlang, stripePath } = JSON.parse(event.body);
    // Find the product
    const product = inventory.find((p) => p.sku === sku);
    // Sanitize quantity
    const validateQuantity = quantity > 0 && quantity < 11 ? quantity : 1;
 
    // Get the return URL part for the used language
-   const rootUrl = `/`+formlang;
+   const rootUrl = '/';
 
    // Create Stripe session
    const session = await stripe.checkout.sessions.create({
@@ -28,8 +28,8 @@ exports.handler = async (event) => {
       // The real next URL for the web site language
       // success_url: `${process.env.URL}`+rootUrl+`/thanks/`,
       // cancel_url:  `${process.env.URL}`+rootUrl+`/oops/`,
-      success_url: stripeImgPath+rootUrl+`/thanks/`,
-      cancel_url:  stripeImgPath+rootUrl+`/oops/`,
+      success_url: stripePath+rootUrl+`/thanks/`,
+      cancel_url:  stripePath+rootUrl+`/oops/`,
 
       // Information about the product
       line_items: [

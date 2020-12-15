@@ -44,8 +44,8 @@
                            Stripe Checkout need an ABSOLUTE URL reachable from Internet
                            And we have RELATIVE path in our products.json -->
                      <!-- Needed if Images are managed from STATIC -->
-                     {{- $stripeImgPath := (strings.TrimRight "/" site.BaseURL) }}
-                     <input type="hidden" name="stripeImgPath" value="{{ $stripeImgPath }}" />
+                     {{- $stripePath := (strings.TrimRight "/" site.BaseURL) }}
+                     <input type="hidden" name="stripePath" value="{{ $stripePath }}" />
                      <br>
                      <button type="submit" class="fa fa-shopping-cart"></button>
                   </form>
