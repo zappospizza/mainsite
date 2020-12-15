@@ -31,17 +31,11 @@ exports.handler = async (event) => {
       success_url: stripeImgPath+rootUrl+`/thanks/`,
       cancel_url:  stripeImgPath+rootUrl+`/oops/`,
 
-      // Informations about the product
+      // Information about the product
       line_items: [
          {
             name: `[`+product.sku+'] '+product.name ,
             description: product.description,
-            // We need ABSOLUTE path Absolute URL for images used by Stripe
-            //    Use this for Images in STATIC
-            // images: [stripeImgPath+product.image],
-            //    Use this for Images in ASSET
-            // images: [stripeImg],
-            images: [stripeImg],
             amount: product.amount,
             currency: product.currency,
             quantity: validateQuantity,
