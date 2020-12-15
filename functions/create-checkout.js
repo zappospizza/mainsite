@@ -15,7 +15,7 @@ exports.handler = async (event) => {
    const validateQuantity = quantity > 0 && quantity < 11 ? quantity : 1;
 
    console.log('1: ' + '${process.env.URL}' + '/thanks/')
-   console.log('2: ' + '${process.env.URL}' + '/thanks/')
+   console.log('2: ' + process.env.URL + '/thanks/')
 
    // Create Stripe session
    const session = await stripe.checkout.sessions.create({
@@ -28,8 +28,8 @@ exports.handler = async (event) => {
       // The real next URL for the web site language
       // success_url: `${process.env.URL}`+rootUrl+`/thanks/`,
       // cancel_url:  `${process.env.URL}`+rootUrl+`/oops/`,
-      success_url: '${process.env.URL}' + '/thanks/',
-      cancel_url:  '${process.env.URL}',
+      success_url: process.env.URL + '/thanks/',
+      cancel_url:  process.env.URL,
 
       // Information about the product
       line_items: [
