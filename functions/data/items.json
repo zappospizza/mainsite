@@ -1,0 +1,11 @@
+[
+    {
+       "sku" : "GFTCARD-50",
+       "name" : "Gift Card - $50",
+       "description": "$50 Zappos Pizza Gift Card",
+       "image": "images/gift-card.jpeg",
+       "image_hover": "images/gift-card.jpeg",
+       "amount": "5000",
+       "currency": "USD"
+    }
+]
