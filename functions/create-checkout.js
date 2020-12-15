@@ -14,6 +14,9 @@ exports.handler = async (event) => {
    // Sanitize quantity
    const validateQuantity = quantity > 0 && quantity < 11 ? quantity : 1;
 
+   console.log('1: ' + '${process.env.URL}' + '/thanks/')
+   console.log('2: ' + '${process.env.URL}' + '/thanks/')
+
    // Create Stripe session
    const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
