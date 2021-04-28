@@ -83,6 +83,11 @@ locations:
     storeCode: zp002
     storePhoneNumber: (503) 206-7010
 
+  - storeName: McLoughlin Blvd.
+    storeAddress: "17038 SE McLoughlin Blvd, Milwaukie, OR 97267"
+    storeCode: zp003
+    storePhoneNumber: (503) 305-7324
+
 ################### Subscription ################
 subscription:
   enable : true
