@@ -52,6 +52,49 @@
                             </div>
                         </div>
                         {{ end }}
+                        {{ range .newStores }}
+                        <div class="card" style="margin-bottom: 2em;">
+                            <div class="card-header" style="padding: 2px 20px; text-transform: uppercase; background-color: #EC1C24; color: white; font-size: 3em;">
+                              {{ .storeName }}
+                            </div>
+                            <div class="card-body" style="padding: 2em; background-color: #F6F6F6 !important;">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="card">
+                                            <h2 class="card-title" style="text-align: center; font-size: 28px;">ONLINE ORDERING (THROUGH SLICE)</h2>
+                                            <div class="card-body">
+                                                <button id="start-now" type="button" class="btn btn-sm-block" style="margin-left: 0px !important; border-radius: 0px; border: none; background-color: #EC1C24; padding-left: 0px; padding-right: 0px; width: 100%;">
+                                                    <a href="https://slicelife.com/restaurants/or/milwaukie/97267/zappos-pizza-mcloughlin/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=">
+                                                        <img src="https://slicelink-assets-production.imgix.net/partner-buttons/slice-button-small-dark-start-order.png" width=198 height="44"/>
+                                                      </a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="card">
+                                            <h2 class="card-title" style="text-align: center; font-size: 28px;">PHONE NUMBER</h2>
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 20px; width: 100% !important; padding: 10px 10px; text-align: center;">
+                                                    {{ .storePhoneNumber }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="card">
+                                            <h2 class="card-title" style="text-align: center; font-size: 28px;">ADDRESS</h2>
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 20px; width: 100% !important; padding: 10px 10px; text-align: center;">
+                                                    {{ .storeAddress }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
                         </div>
                     </div>
                 </div>
